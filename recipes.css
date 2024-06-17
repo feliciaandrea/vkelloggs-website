@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: relative;
+    background-image: url('images/banner_recipes.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: black;
+    height: 438px;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #000000e8 0%, #00000000 100%);
+    opacity: 0.4;
+    z-index: 1;
+}
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.banner-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.577);
+}
+
+.heading {
+    text-align: center;
+    margin: 50px 0;
+}
+.heading h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.heading p {
+    font-size: 26px;
+    font-weight: 600;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.recipes {
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+}
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.recipe-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 45%;
+    padding: 10px;
+}
+.recipe-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.recipe-text {
+    padding: 20px;
+    text-align: left;
+    width: 60%;
+}
+.recipe-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FF7070;
+}
+.recipe-text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.recipe-text a {
+    color: #A2D0E2;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+}
+.recipe-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .recipe-item {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .recipe-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .recipe-text {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}

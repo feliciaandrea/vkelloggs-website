@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    position: relative;
+    background-image: url('images/banner_about us.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: black;
+    height: 438px;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #000000e8 0%, #00000000 100%);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.about-us-section,
+.history-section,
+.mission-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.about-us-section .container,
+.history-section .container,
+.mission-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-us-section h1,
+.history-section h1,
+.mission-section h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about-us-section .content,
+.history-section .content,
+.mission-section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about-us-section .text,
+.history-section .text,
+.mission-section .text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: justify;
+    font-weight: 500;
+    max-width: 677;
+    font-size: 22px;
+}
+.history-section .text p,
+.mission-section .text p {
+    margin-bottom: 20px;
+}
+.about-us-section .image,
+.history-section .image {
+    flex: 1;
+    padding: 0 20px;
+}
+.about-us-section .image img,
+.history-section .image img {
+    width: auto;
+    height: 420px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .about-us-section .content,
+    .history-section .content,
+    .mission-section .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-section .text,
+    .history-section .text,
+    .mission-section .text {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .about-us-section .image,
+    .history-section .image {
+        padding: 20px 0;
+    }
+
+    .about-us-section .image img,
+    .history-section .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us-section h1,
+    .history-section h1,
+    .mission-section h1 {
+        font-size: 36px;
+    }
+
+    .about-us-section .text,
+    .history-section .text,
+    .mission-section .text {
+        font-size: 20px;
+    }
+}

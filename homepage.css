@@ -1,0 +1,231 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: relative;
+    background-image: url('images/banner_home.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: black;
+    height: 438px;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #000000e8 0%, #00000000 100%);
+    opacity: 0.4;
+    z-index: 1;
+}
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+.banner-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    max-width: 792px;
+}
+.banner-content p {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    max-width: 740px;
+}
+.banner-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF7070;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 80px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+.banner-content .btn:hover {
+    background-color: #ffffff;
+    color: #FF7070;
+}
+.banner-overlay {
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    width: 383px;
+    z-index: 3;
+}
+@media screen and (max-width: 992px) {
+    .banner-content {
+        text-align: center;
+        margin-left: 0;
+    }
+    .banner-content h1,
+    .banner-content p,
+    .banner-content .btn {
+        margin-left: 0;
+    }
+    .banner-overlay {
+        display: none;
+    }
+}
+
+.best-products {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+.best-products h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.product {
+    margin: 20px;
+    text-align: center;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+.product img {
+    width: auto;
+    height: 295px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+.product img:hover {
+    transform: scale(1.05);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 26px;
+    color: #FF7070;
+    background-color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+.btn:hover {
+    background-color: #FF7070;
+    color: #fff;
+}
+
+.best-recipes {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #E0F4FB;
+}
+.best-recipes h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.recipes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.recipe {
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+.recipe-image {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #FF7070;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+.recipe img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.recipe:hover .recipe-image {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.recipe p {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.recipe p + p {
+    font-size: 15px;
+    color: #000000;
+}
+.best-recipes .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 26px;
+    color: #FF7070;
+    background-color: #E0F4FB;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+.best-recipes .btn:hover {
+    background-color: #FF7070;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: auto; /* Sesuaikan tinggi banner untuk layar kecil */
+        padding: 20px; /* Kurangi padding pada layar kecil */
+    }
+
+    .banner-content h1 {
+        font-size: 32px; /* Kurangi ukuran font pada layar kecil */
+    }
+
+    .banner-content p {
+        font-size: 18px; /* Kurangi ukuran font pada layar kecil */
+    }
+
+    .banner-content .btn {
+        font-size: 16px; /* Kurangi ukuran font pada layar kecil */
+    }
+
+    .banner-overlay {
+        width: 150px; /* Kurangi ukuran gambar pada layar kecil */
+    }
+}

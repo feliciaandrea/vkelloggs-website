@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellogg's Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="homepage.html" class="active"><img src="images/logo_vkelloggs.png"></a>
+            <input type="checkbox" id="menuToggle" class="menu-toggle">
+            <label for="menuToggle" class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="homepage.html" class="active">Home</a></li>
+                    <li><a href="products_kids.html">Products</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>ENJOY A HEALTHY BREAKFAST WITH VKELLOGG'S</h1>
+            <p>Discover The Best Products And Delicious Recipes From VKellogg's</p>
+            <a href="products_kids.html" class="btn">Browse Products</a>
+        </div>
+        <img src="images/home_banner_bowl.png" alt="Cereal Bowl" class="banner-overlay">
+    </section>
+    
+    <section class="best-products">
+        <h2>Our Top Pick</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/home_froot loops.png" alt="Froot Loops">
+                <p>Froot Loops</p>
+            </div>
+            <div class="product">
+                <img src="images/home_chocos magic.png" alt="Chocos Magic">
+                <p>Chocos Magic</p>
+            </div>
+            <div class="product">
+                <img src="images/home_special k vanilla almond.png" alt="Special K Vanilla Almond">
+                <p>Special K Vanilla Almond</p>
+            </div>
+            <div class="product">
+                <img src="images/home_mueslix harvest fruit.png" alt="Mueslix Harvest Fruit">
+                <p>Mueslix Harvest Fruit</p>
+            </div>
+        </div>
+        <a href="products_kids.html" class="btn">Discover More Products</a>
+    </section>
+
+    <section class="best-recipes">
+        <h2>Our Best Recipes</h2>
+        <div class="recipes">
+            <div class="recipe" onclick="window.location.href='recipe_frosties crusted french toast.html'">
+                <div class="recipe-image">
+                    <img src="images/home_frosties crusted french toast.png" alt="Frosties Crusted French Toast">
+                </div>
+                <p>Frosties Crusted French Toast</p>
+                <p>Servings: <strong>6</strong> | Prep Time: <strong>10 mins</strong></p>
+            </div>
+            <div class="recipe" onclick="window.location.href='recipe_coco pops and peanut butter bars.html'">
+                <div class="recipe-image">
+                    <img src="images/home_coco pops and peanut butter bars.png" alt="Coco Pops And Peanut Butter Bars">
+                </div>
+                <p>Coco Pops And Peanut Butter Bars</p>
+                <p>Servings: <strong>4</strong> | Prep Time: <strong>25 mins</strong></p>
+            </div>
+            <div class="recipe" onclick="window.location.href='recipe_froot loops raya bar.html'">
+                <div class="recipe-image">
+                    <img src="images/home_froot loops raya bar.png" alt="Froot Loops Raya Bar">
+                </div>
+                <p>Froot Loops Raya Bar</p>
+                <p>Servings: <strong>9</strong> | Prep Time: <strong>10 mins</strong></p>
+            </div>
+        </div>
+        <a href="recipes.html" class="btn">Discover More Recipes</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo_vkelloggs.png" alt="VKellogg's Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="products_kids.html">Products</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <li><img src="images/icon_phone.png" alt="Phone Icon"> 021-3456-7899</li>
+                    <li><img src="images/icon_email.png" alt="Email Icon"> vkelloggs@gmails.com</li>
+                    <li><img src="images/icon_instagram.png" alt="Instagram Icon"> @vkelloggs</li>
+                    <li><img src="images/icon_twitter.png" alt="Twitter Icon"> @vkelloggs</li>
+                    <li><img src="images/icon_location.png" alt="Location Icon"> Battle Creek, Michigan</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
